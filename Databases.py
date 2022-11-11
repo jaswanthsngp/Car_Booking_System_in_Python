@@ -1,9 +1,12 @@
+#These are the sample databases used
+#Create a database in your MySQL server and run this code to create the tables required
+
 import mysql.connector
 mydb=mysql.connector.connect(
     host="localhost",
-    user="root",
-    password="Pwd4DBM$",
-    database= "alltables"
+    user="your_username",
+    password="your_password",
+    database= "your_database"
     )
 mycursor= mydb.cursor()
 mycursor.execute('create table car(regNo varchar(10) primary key, chasisNo varchar(17), manufacturer varchar(20), model varchar(30), seats int)')
