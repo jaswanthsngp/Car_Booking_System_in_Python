@@ -16,8 +16,8 @@ mycursor= mydb.cursor()
 
 #Schemas taken for DataBase
 #car(regNo varchar(10) primary key, chasisNo varchar(17), manufacturer varchar(20), model varchar(30), seats int)
-#person(name varchar(30), age int, gender varchar(6), licence varchar(20) primary key, contact bigint, emergencyContact bigint);
-#rent(car.regNO, person.licence, time_at_which car is taken) is created and further processes are to be done
+#person(name varchar(30), age int, gender varchar(6), licence varchar(20) primary key, contact bigint, emergencyContact bigint)
+#rent(carNo varchar(10), plicence varchar(20), tookAt int)
 
 
 def book():
