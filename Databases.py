@@ -10,7 +10,7 @@ mydb=mysql.connector.connect(
     )
 mycursor= mydb.cursor()
 mycursor.execute('create table car(regNo varchar(10) primary key, chasisNo varchar(17), manufacturer varchar(20), model varchar(30), seats int)')
-mycursor.execute('create table person(name varchar(30), age int, gender varchar(6), licence varchar(20) primary key, contact int, emergencyContact int)')
+mycursor.execute('create table person(name varchar(30), age int, gender varchar(6), licence varchar(20) primary key, contact bigint, emergencyContact bigint)')
 mycursor.execute('create table rent(carNo varchar(10), plicence varchar(20), tookAt int)')
 data= [
     ('KA19P8487', 'JH4NA1150RT000268', 'Renault', 'Kwid', 5),
